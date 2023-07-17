@@ -52,6 +52,10 @@ pipeline {
             steps {
                 // Étape de construction de votre projet PHP (par exemple, exécution de tests, génération de fichiers, etc.)
                 bat 'ng build --configuration'
+                bat 'npm install -g @angular/cli'
+                bat 'ng new test'
+                bat 'cd test'
+                bat 'ng serve'
                  // bat 'php build.php'
             }
         }
