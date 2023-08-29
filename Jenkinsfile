@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Étape de récupération du code source depuis un référentiel Git
-                git 'https://github.com/mamadoucire/angular.git'
+                git branch: 'main', url: 'https://github.com/mamadoucire/angular.git'
             }
         }
 
